@@ -2,6 +2,11 @@ package Product;
 
 public class food extends Product {
 
+    public food(String inName, int inPrice, int inQuantity, String inUnOFMeasurement) {
+        super(inName, inPrice, inQuantity, inUnOFMeasurement);
+        //TODO Auto-generated constructor stub
+    }
+
     private String expiration_Date; //*Срок годности */
 
     public void setExpiration_Date (String string) {

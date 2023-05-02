@@ -2,25 +2,29 @@ package Product;
 
 
 public class Drinks extends Product {
-
-    private Double Volume; //* Объём */
+    private float Volume; //* Объём */
+    public Drinks(String inName, int inPrice, int inQuantity, String inUnOFMeasurement, Float inVolume) {
+        super(inName, inPrice, inQuantity, inUnOFMeasurement);
+        this.Volume = (float) inVolume;
+    }
 
     /**
      * 
      * @param Volume Объём
      */
 
-    public void setVolume (Double vlm) {
-        this.Volume = vlm;
+     
+    public void setVolume (float f) {
+        this.Volume = f;
     }
 
-    public Double getVolume () {
+    public float getVolume () {
         return Volume;
     }
 
     @Override
     public String toString() {
-        return super.toString() + String.format(" / Объём: %f", getVolume());
+        return super.toString() + String.format(" / Объём: %.2f Литра", getVolume());
     }
     
 }

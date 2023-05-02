@@ -2,6 +2,11 @@ package Product;
 
 public class Hygiene extends Product {
     
+    public Hygiene(String inName, int inPrice, int inQuantity, String inUnOFMeasurement) {
+        super(inName, inPrice, inQuantity, inUnOFMeasurement);
+        //TODO Auto-generated constructor stub
+    }
+
     private int quantity_Package; // Количество в упаковке
 
    

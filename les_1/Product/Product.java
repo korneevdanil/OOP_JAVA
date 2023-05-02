@@ -6,45 +6,50 @@ import javax.lang.model.type.NullType;
 public class Product {
     
     
-    private String name;
-    private int price; 
-    private int quantity;
+    private String Name;
+    private int Price; 
+    private int Quantity;
     private String UnOFMeasurement;
+
+    
 
     /**
      * Описание
-     * @param name Наименование товара  
-     * @param price Цена
-     * @param quantity Количество
+     * @param Name Наименование товара  
+     * @param Price Цена
+     * @param Quantity Количество
      * @param UnOFMeasurement Единица измерения
      */
 
-    public Product() {
-
+    public Product( String inName, int inPrice, int inQuantity, String inUnOFMeasurement) { 
+        Name = inName;
+        Price = inPrice;
+        Quantity = inQuantity;
+        UnOFMeasurement = inUnOFMeasurement;
     }
 
     public void setName (String string) {
-        this.name = string;
+        this.Name = string;
     }
 
     public String getName  () {
-        return name;
+        return Name;
     }
 
-    public void setPrice (int price) {
-        this.price = price;
+    public void setPrice (int inPrice) {
+        this.Price = inPrice;
     }
 
     public int getPrice () {
-        return price;
+        return Price;
     }
 
-    public void setQuantity (int quantity) {
-        this.quantity = quantity;
+    public void setQuantity (int inQuantity) {
+        this.Quantity = inQuantity;
     }
 
     public int getQuantity () {
-        return quantity;
+        return Quantity;
     }
 
     public void setUnOFMeasurement(String string) {
