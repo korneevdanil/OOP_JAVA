@@ -2,7 +2,9 @@ package Product;
 
 
 public class Drinks extends Product {
+
     private float Volume; //* Объём */
+    
     public Drinks(String inName, int inPrice, int inQuantity, String inUnOFMeasurement, Float inVolume) {
         super(inName, inPrice, inQuantity, inUnOFMeasurement);
         this.Volume = (float) inVolume;

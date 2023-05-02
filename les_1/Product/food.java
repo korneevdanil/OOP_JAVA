@@ -2,24 +2,25 @@ package Product;
 
 public class food extends Product {
 
-    public food(String inName, int inPrice, int inQuantity, String inUnOFMeasurement) {
+    private String Expiration_Date; //*Срок годности */
+
+    public food(String inName, int inPrice, int inQuantity, String inUnOFMeasurement, String inExpiration_Date) {
         super(inName, inPrice, inQuantity, inUnOFMeasurement);
-        //TODO Auto-generated constructor stub
+        this.Expiration_Date = inExpiration_Date;
     }
 
-    private String expiration_Date; //*Срок годности */
 
     public void setExpiration_Date (String string) {
-        this.expiration_Date = string;
+        this.Expiration_Date = string;
     }
 
     public String getExpiration_Date   () {
-        return expiration_Date;
+        return Expiration_Date;
     }
 
     @Override
     public String toString() {
-        return super.toString() + String.format(" / Срок годности: %s", getExpiration_Date());
+        return super.toString() + String.format(" / Срок годности: ДО %s", getExpiration_Date());
     }
     
 }

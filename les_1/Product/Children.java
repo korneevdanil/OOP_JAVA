@@ -2,14 +2,15 @@ package Product;
 
 public class Children extends Product {
 
-    public Children(String inName, int inPrice, int inQuantity, String inUnOFMeasurement) {
-        super(inName, inPrice, inQuantity, inUnOFMeasurement);
-        //TODO Auto-generated constructor stub
-    }
-
-    /** Минимальный возраст */
     private int minAge;
     private String Hypoallergenic;
+
+    public Children(String inName, int inPrice, int inQuantity, String inUnOFMeasurement, int inAge, String inHypoall) {
+        super(inName, inPrice, inQuantity, inUnOFMeasurement);
+        this.minAge = inAge;
+        this.Hypoallergenic = inHypoall;
+
+    }
 
     public void setAge (int inAge) {
         this.minAge = inAge;
@@ -28,7 +29,7 @@ public class Children extends Product {
             String Yes = "Есть";
             return Yes;
         } else {
-            String No = "No";
+            String No = "Нет";
             return No;
         }
     }
