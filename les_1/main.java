@@ -49,7 +49,6 @@ public class main {
         System.out.println(iNip.toString());
 
 
-
     }
     
 }
